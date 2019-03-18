@@ -20,5 +20,3 @@ ReactDOM.render((
         <FuncComponent name={'World'} />
     </div>
     ), container);
-
-

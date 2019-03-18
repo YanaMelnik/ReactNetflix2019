@@ -1,4 +1,12 @@
+const path = require("path");
+
 module.exports = {
+    entry: [
+        './src/index.js',
+    ],
+    resolve: {
+        extensions: ['.jsx', '.js'],
+    },
     module: {
         rules: [
             {
@@ -9,5 +17,8 @@ module.exports = {
                 }
             }
         ]
+    },
+    devServer: {
+        contentBase: path.join(__dirname, "app"),
     }
 };
