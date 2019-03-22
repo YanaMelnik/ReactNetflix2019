@@ -15,10 +15,15 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
+            },
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: ['babel-loader', 'eslint-loader']
             }
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, "app"),
+        contentBase: path.join(__dirname, 'app'),
     }
 };
