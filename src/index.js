@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as ReactDOM from 'react-dom';
 import HelloWorld from './js/components/HelloWorld.jsx';
 import HelloWorldPure from './js/components/HelloWorldPure.jsx';
@@ -10,6 +11,9 @@ const CreateElementComponent = React.createElement(
 );
 
 const FuncComponent = ({ name }) => <h1>Hello Functional {name}</h1>;
+FuncComponent.propTypes = {
+  name: PropTypes.string.isRequired,
+};
 
 const container = document.getElementById('container');
 ReactDOM.render((
