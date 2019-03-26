@@ -1,12 +1,4 @@
-import React, { Component } from 'react';
-
-// class HelloWorld extends Component {
-//   render() {
-//     return (
-//       <h1>Hello World with React Component</h1>
-//     );
-//   }
-// }
+import React from 'react';
 
 const HelloWorld = () => <h1>Hello World with React Component</h1>;
 
