@@ -1,5 +1,4 @@
 ## React Mentoring
 
-#### Task 1
+#### Task 2
 - npm run start
-- npm run build
