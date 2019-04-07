@@ -4,7 +4,8 @@
     "no-unused-vars": 0,
     "max-len": [1, 120, 2, {
       "ignoreComments": true}],
-    "react/prop-types": 2
+    "react/prop-types": 2,
+
   },
   "plugins": [
     "react"
@@ -13,5 +14,11 @@
     "browser": true,
     "node": true
   },
-  "extends": ["airbnb-base", "plugin:react/recommended"]
+  "extends": ["airbnb-base", "plugin:react/recommended"],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.0"
+    }
+  }
 }
