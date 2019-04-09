@@ -1,0 +1,32 @@
+.film-element {
+    flex: 0 0 28%;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    max-width: 28%;
+}
+
+.film-element__header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: 10px 10px 0;
+}
+
+.film-element__title {
+
+}
+
+.film-element__year {
+    padding: 1px 5px;
+    border: 1px solid black;
+    font-size: 11px;
+    border-radius: 3px;
+    max-height: 13px;
+    min-height: 13px;
+}
+
+.film-element__genre {
+    margin: 0 10px;
+    color: #8d8d8d;
+    font-size: 12px;
+}

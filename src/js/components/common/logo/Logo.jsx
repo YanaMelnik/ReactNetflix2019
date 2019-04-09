@@ -1,8 +1,9 @@
 import React from 'react';
+import './Logo.css';
 
 const Logo = () => <div
-    className='logo'>
-    netflixroutell
+    className='logo wrapper'>
+    netflixroulette
   </div>;
 
 

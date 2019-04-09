@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './FilmListMenu.css';
 
 class FilmListMenu extends Component {
   render() {
+    let contentElement;
+    if (this.props.genreName) {
+      contentElement = `Films by ${this.props.genreName} genre`;
+    } else if (this.props.resultLength) {
+      contentElement = `${this.props.resultLength} movies found`;
+    }
+
     return (
-      <div>
-        <p>Films by {this.props.genreName} genre</p>
-        <p>{this.props.resultLength} movies found</p>
-        {this.props.filmSorting}
+      <div className='film-list-menu'>
+        <div className='wrapper film-list-menu__wrapper'>
+          <span className='film-list-menu__left'>
+            { contentElement }
+          </span>
+
+          <span className='film-list-menu__right'>
+            {this.props.filmSorting}
+          </span>
+        </div>
       </div>
     );
   }
@@ -16,7 +30,7 @@ class FilmListMenu extends Component {
 FilmListMenu.propTypes = {
   filmSorting: PropTypes.element,
   genreName: PropTypes.string,
-  resultLength: PropTypes.number,
+  resultLength: PropTypes.string,
 };
 
 export default FilmListMenu;

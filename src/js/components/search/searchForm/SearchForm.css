@@ -1,0 +1,59 @@
+.search-film__name-title {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, serif;
+    font-weight: 300;
+    margin: 15px 0 20px;
+}
+
+.search-film__name-input {
+    display: block;
+    width: 96%;
+    border: 0 solid;
+    border-bottom: 2px solid #f34c70;
+    background: black;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.search-by__title {
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, serif;
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.search-by__input {
+    display: none;
+}
+
+.search-by__label {
+    display: inline-block;
+    background-color: #4c4a4a;
+    padding: 2px 15px;
+    font-family: Arial, serif;
+    font-size: 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 400;
+    margin: 10px 10px 30px;
+    text-transform: uppercase;
+}
+
+.search-by input[type="radio"]:checked + label {
+    background-color: #f34c70;
+}
+
+.search-by__label:hover {
+    background-color: #ffc1c9;
+}
+
+.search-by__action-block {
+    display: flex;
+    justify-content: space-between;
+}

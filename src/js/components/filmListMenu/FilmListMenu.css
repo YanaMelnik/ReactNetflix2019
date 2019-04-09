@@ -1,0 +1,18 @@
+.film-list-menu {
+    width: 100%;
+    background: #f1eeee;
+    min-height: 40px;
+    display: flex;
+}
+
+.film-list-menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.film-list-menu__left {
+    margin: 20px 0 20px;
+}
