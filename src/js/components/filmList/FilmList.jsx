@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import FilmListElement from './filmListElement/FilmListElement.jsx';
+import FilmListElement from './filmListElement/FilmListElement';
+
 import './FilmList.css';
 
 function filmMapCallback(elem) {

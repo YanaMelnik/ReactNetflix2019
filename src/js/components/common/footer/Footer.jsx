@@ -1,6 +1,7 @@
 import React from 'react';
+import Logo from '../logo/Logo';
+
 import './Footer.css';
-import Logo from '../logo/Logo.jsx';
 
 const Footer = () => <footer className='footer'>
     <Logo/>

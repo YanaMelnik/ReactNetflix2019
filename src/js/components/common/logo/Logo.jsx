@@ -1,5 +1,6 @@
 import React from 'react';
-import 'Logo.css';
+
+import './Logo.css';
 
 const Logo = () => <div
     className='logo wrapper'>

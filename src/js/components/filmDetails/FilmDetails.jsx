@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import FilmPoster from '../common/filmPoster/FilmPoster.jsx';
+import FilmPoster from '../common/filmPoster/FilmPoster';
+import Logo from '../common/logo/Logo';
+import Button from '../common/button/Button';
+
 import './FilmDetails.css';
-import Logo from '../common/logo/Logo.jsx';
-import Button from '../common/button/Button.jsx';
 
 class FilmDetails extends Component {
   render() {

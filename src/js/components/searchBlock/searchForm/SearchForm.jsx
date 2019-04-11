@@ -1,6 +1,7 @@
 import React from 'react';
-import Logo from '../../common/logo/Logo.jsx';
-import Button from '../../common/button/Button.jsx';
+import Logo from '../../common/logo/Logo';
+import Button from '../../common/button/Button';
+
 import './SearchForm.css';
 
 const SearchForm = () => <div>

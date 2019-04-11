@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import './FilmListMenu.css';
 
 class FilmListMenu extends Component {
@@ -19,7 +20,6 @@ class FilmListMenu extends Component {
           </span>
 
           <span className='film-list-menu__right'>
-            {this.props.children}
             {this.props.filmSorting}
           </span>
         </div>

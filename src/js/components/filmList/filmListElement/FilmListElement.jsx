@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import FilmPoster from '../../common/filmPoster/FilmPoster.jsx';
+import FilmPoster from '../../common/filmPoster/FilmPoster';
+
 import './FilmListElement.css';
 
 class FilmListElement extends Component {
