@@ -19,6 +19,7 @@ class FilmListMenu extends Component {
           </span>
 
           <span className='film-list-menu__right'>
+            {this.props.children}
             {this.props.filmSorting}
           </span>
         </div>

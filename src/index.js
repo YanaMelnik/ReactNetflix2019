@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as ReactDOM from 'react-dom';
-import Footer from './js/components/common/footer/Footer.jsx';
-import SearchBlock from './js/components/searchBlock/SearchBlock.jsx';
-import FilmListMenu from './js/components/filmListMenu/FilmListMenu.jsx';
+import Footer from 'js/components/common/footer/Footer';
+import SearchBlock from 'js/components/searchBlock/SearchBlock';
+import FilmListMenu from 'js/components/filmListMenu/FilmListMenu';
 import './style/style.css';
-import FilmList from './js/components/filmList/FilmList.jsx';
-import ErrorBoundary from './js/components/common/errorBoundary/ErrorBoundary.jsx';
-import FilmDetails from './js/components/filmDetails/FilmDetails.jsx';
+import FilmList from 'js/components/filmList/FilmList';
+import ErrorBoundary from 'js/components/common/errorBoundary/ErrorBoundary';
+import FilmDetails from 'js/components/filmDetails/FilmDetails';
 
 const FuncComponent = ({ name }) => <h1>Hello Functional {name}</h1>;
 FuncComponent.propTypes = {
