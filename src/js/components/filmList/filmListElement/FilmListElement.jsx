@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FilmPoster from '../../common/filmPoster/FilmPoster.jsx';
-import './FilmElement.css';
+import './FilmListElement.css';
 
-class FilmElement extends Component {
+class FilmListElement extends Component {
   render() {
     return (
       <div className='film-element'>
@@ -20,11 +20,11 @@ class FilmElement extends Component {
   }
 }
 
-FilmElement.propTypes = {
+FilmListElement.propTypes = {
   filmName: PropTypes.string.isRequired,
   yearOfIssue: PropTypes.number.isRequired,
   genre: PropTypes.string.isRequired,
   filmPosterUrl: PropTypes.string.isRequired,
 };
 
-export default FilmElement;
+export default FilmListElement;

@@ -1,57 +1,23 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import FilmElement from './filmElement/FilmElement.jsx';
+import FilmListElement from './filmListElement/FilmListElement.jsx';
 import './FilmList.css';
+
+function filmMapCallback(elem) {
+  return <FilmListElement
+      key={elem.id}
+      filmName={elem.title}
+      yearOfIssue={elem.release_date}
+      genre={elem.genres[0]}
+      filmPosterUrl={elem.poster_path}/>;
+}
 
 class FilmList extends Component {
   render() {
+    const filmListArray = this.props.filmsArray.map(filmMapCallback);
     return (
       <div className='wrapper film-list'>
-        <FilmElement
-          filmName={this.props.filmsArray[0].title}
-          yearOfIssue={this.props.filmsArray[0].release_date}
-          genre={this.props.filmsArray[0].genres[0]}
-          filmPosterUrl={this.props.filmsArray[0].poster_path}/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
-        <FilmElement
-          filmName='hfhfh'
-          yearOfIssue='1998'
-          genre='jhfj'
-          filmPosterUrl='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'/>
+        {filmListArray}
       </div>
     );
   }

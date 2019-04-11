@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as ReactDOM from 'react-dom';
 import Footer from './js/components/common/footer/Footer.jsx';
-import Search from './js/components/search/Search.jsx';
+import SearchBlock from './js/components/searchBlock/SearchBlock.jsx';
 import FilmListMenu from './js/components/filmListMenu/FilmListMenu.jsx';
 import './style/style.css';
 import FilmList from './js/components/filmList/FilmList.jsx';
@@ -31,7 +31,7 @@ const filmsArrayElement = [
     genres: ['drama'],
   },
   {
-    id: 1,
+    id: 2,
     title: 'Film Name',
     tagline: '',
     vote_average: 1,
@@ -45,7 +45,7 @@ const filmsArrayElement = [
     genres: ['drama'],
   },
   {
-    id: 1,
+    id: 3,
     title: 'Film Name',
     tagline: '',
     vote_average: 1,
@@ -63,18 +63,14 @@ const filmsArrayElement = [
 ReactDOM.render((
   <ErrorBoundary>
     <FilmDetails
-      filmName='Film name'
-      url='https://i.pinimg.com/originals/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02.jpg'
-      rate={4.1}
-      shortDescription='shortDescription'
-      yearOfIssue={1995}
-      duration={55}
-      longDescriptions={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
-      + 'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut '
-      + 'aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore '
-      + 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt '
-      + 'mollit anim id est laborum.'}/>
-    <FilmListMenu className='film-list-menu' resultLength='5'/>
+      filmName={filmsArrayElement[0].title}
+      url={filmsArrayElement[0].poster_path}
+      rate={filmsArrayElement[0].vote_average}
+      shortDescription={filmsArrayElement[0].tagline}
+      yearOfIssue={filmsArrayElement[0].release_date}
+      duration={filmsArrayElement[0].runtime}
+      longDescriptions={filmsArrayElement[0].overview}/>
+    <FilmListMenu className='film-list-menu' resultLength={filmsArrayElement.length}/>
     <FilmList filmsArray={filmsArrayElement}/>
     <Footer/>
   </ErrorBoundary>

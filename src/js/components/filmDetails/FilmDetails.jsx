@@ -19,7 +19,9 @@ class FilmDetails extends Component {
           <div className='film-details__content-text'>
             <div className='film-details__header'>
               <span className='film-details__title'>{this.props.filmName}</span>
-              <span className='film-details__rate'>{this.props.rate}</span>
+              <div className='film-details__rate'>
+                <span>{this.props.rate}</span>
+              </div>
             </div>
 
             <span className='film-details__shortDescription'>{this.props.shortDescription}</span>
