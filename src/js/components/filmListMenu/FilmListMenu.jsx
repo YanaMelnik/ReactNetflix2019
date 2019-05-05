@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import './FilmListMenu.css';
+import FilmListSortingOptions from './filmListSortingOptions/FilmListSortingOptions';
 
 class FilmListMenu extends Component {
   render() {
@@ -18,20 +19,26 @@ class FilmListMenu extends Component {
           <span className='film-list-menu__left'>
             { contentElement }
           </span>
-
-          <span className='film-list-menu__right'>
-            {this.props.filmSorting}
-          </span>
+          {this.props.filmSorting
+            ? (<span className='film-list-menu__right'>
+              <FilmListSortingOptions/>
+            </span>)
+            : null}
         </div>
       </div>
     );
   }
 }
 
+// TODO: how to set required for 1 of the props?  (resultLength or genreName)
 FilmListMenu.propTypes = {
-  filmSorting: PropTypes.element,
+  filmSorting: PropTypes.bool,
   genreName: PropTypes.string,
   resultLength: PropTypes.string,
+};
+
+FilmListMenu.defaultProps = {
+  filmSorting: false,
 };
 
 export default FilmListMenu;

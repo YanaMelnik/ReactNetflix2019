@@ -1,30 +1,14 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
-class FilmListSortingOptions extends Component {
-  render() {
-    if (!this.props.filmSorting) {
-      return null;
-    }
-
-    return (
-      <form>
+const FilmListSortingOptions = () => <form>
         <span>Sort by</span>
         <span>
             <input name='sort__by' type='radio' value='date'/>
             release date
-          </span>
+        </span>
         <span>
             <input name='sort__by' type='radio' value='rating' checked/>
             rating
-          </span>
-      </form>
-    );
-  }
-}
-
-FilmListSortingOptions.propTypes = {
-  filmSorting: PropTypes.bool,
-};
-
+        </span>
+    </form>;
 export default FilmListSortingOptions;

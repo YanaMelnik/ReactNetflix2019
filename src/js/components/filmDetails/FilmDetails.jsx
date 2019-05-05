@@ -12,7 +12,7 @@ class FilmDetails extends Component {
       <div className='film-details'>
         <div className='header wrapper'>
           <Logo/>
-          <Button text='Search' action=''/>
+          <Button name='Search' action={() => {}}/>
         </div>
         <div className='wrapper film-details__content'>
           <FilmPoster filmName={this.props.filmName} imgUrl={this.props.url}/>

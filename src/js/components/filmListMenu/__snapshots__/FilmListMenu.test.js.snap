@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmListMenu should render component with film genre name 1`] = `
+<div
+  className="film-list-menu"
+>
+  <div
+    className="wrapper film-list-menu__wrapper"
+  >
+    <span
+      className="film-list-menu__left"
+    >
+      Films by drama genre
+    </span>
+  </div>
+</div>
+`;
+
+exports[`FilmListMenu should render component with sorting view and count of film 1`] = `
+<div
+  className="film-list-menu"
+>
+  <div
+    className="wrapper film-list-menu__wrapper"
+  >
+    <span
+      className="film-list-menu__left"
+    >
+      7 movies found
+    </span>
+    <span
+      className="film-list-menu__right"
+    >
+      <FilmListSortingOptions />
+    </span>
+  </div>
+</div>
+`;
