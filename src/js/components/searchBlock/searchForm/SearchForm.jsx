@@ -30,7 +30,7 @@ const SearchForm = () => <div>
           Gender
         </label>
         </span>
-        <Button name='Search' action=''/>
+        <Button text='Search' action=''/>
       </div>
     </form>
   </div>;

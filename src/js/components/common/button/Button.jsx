@@ -9,14 +9,14 @@ class Button extends Component {
       <button
         className='button'
         onClick={this.props.action}>
-        {this.props.name}
+        {this.props.text}
       </button>
     );
   }
 }
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   action: PropTypes.func.isRequired,
 };
 
