@@ -10,7 +10,7 @@ exports[`FilmDetails should render component correctly in case when all props de
     <Logo />
     <Button
       action={[Function]}
-      name="Search"
+      text="Search"
     />
   </div>
   <div

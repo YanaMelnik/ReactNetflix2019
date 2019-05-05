@@ -57,7 +57,7 @@ exports[`SearchForm should render component correctly in case when all props def
       </span>
       <Button
         action={[Function]}
-        name="Search"
+        text="Search"
       />
     </div>
   </form>
