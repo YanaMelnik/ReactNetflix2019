@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo should render component correctly in case when all props defined 1`] = `
+<div
+  className="logo wrapper"
+>
+  netflixroulette
+</div>
+`;

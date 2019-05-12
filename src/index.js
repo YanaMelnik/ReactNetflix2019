@@ -8,6 +8,7 @@ import './style/style.css';
 import FilmList from 'js/components/filmList/FilmList';
 import ErrorBoundary from 'js/components/common/errorBoundary/ErrorBoundary';
 import FilmDetails from 'js/components/filmDetails/FilmDetails';
+import FilmListSortingOptions from './js/components/filmListMenu/filmListSortingOptions/FilmListSortingOptions';
 
 const FuncComponent = ({ name }) => <h1>Hello Functional {name}</h1>;
 FuncComponent.propTypes = {
@@ -70,7 +71,7 @@ ReactDOM.render((
       yearOfIssue={filmsArrayElement[0].release_date}
       duration={filmsArrayElement[0].runtime}
       longDescriptions={filmsArrayElement[0].overview}/>
-    <FilmListMenu className='film-list-menu' resultLength={filmsArrayElement.length}/>
+    <FilmListMenu className='film-list-menu' resultLength={filmsArrayElement.length} filmSorting={true}/>
     <FilmList filmsArray={filmsArrayElement}/>
     <Footer/>
   </ErrorBoundary>

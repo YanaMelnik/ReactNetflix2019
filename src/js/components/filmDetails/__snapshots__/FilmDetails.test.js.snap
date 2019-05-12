@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmDetails should render component correctly in case when all props defined 1`] = `
+<div
+  className="film-details"
+>
+  <div
+    className="header wrapper"
+  >
+    <Logo />
+    <Button
+      action={[Function]}
+      text="Search"
+    />
+  </div>
+  <div
+    className="wrapper film-details__content"
+  >
+    <FilmPoster
+      filmName="test"
+      imgUrl="test"
+    />
+    <div
+      className="film-details__content-text"
+    >
+      <div
+        className="film-details__header"
+      >
+        <span
+          className="film-details__title"
+        >
+          test
+        </span>
+        <div
+          className="film-details__rate"
+        >
+          <span>
+            7
+          </span>
+        </div>
+      </div>
+      <span
+        className="film-details__shortDescription"
+      >
+        test
+      </span>
+      <div
+        className="film-details__numbers-details"
+      >
+        <span
+          className="film-details__year"
+        >
+          1991
+        </span>
+        <span
+          className="film-details__duration"
+        >
+          3
+           min
+        </span>
+      </div>
+      <span
+        className="film-details__longDescriptions"
+      >
+        test
+      </span>
+    </div>
+  </div>
+</div>
+`;

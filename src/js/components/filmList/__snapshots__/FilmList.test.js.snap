@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmList should render component correctly in case when all props defined 1`] = `
+<div
+  className="wrapper film-list"
+>
+  <FilmListElement
+    filmName="test"
+    filmPosterUrl="test"
+    genre="drama"
+    key="1"
+    yearOfIssue={1991}
+  />
+</div>
+`;
+
+exports[`FilmList should render component correctly in when films are not defined 1`] = `
+<div
+  className="wrapper film-list"
+>
+  <div
+    className="no_content"
+  >
+    No films found
+  </div>
+</div>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBlock should render component correctly in case when all props defined 1`] = `
+<div
+  className="search-film__block"
+>
+  <SearchForm />
+</div>
+`;

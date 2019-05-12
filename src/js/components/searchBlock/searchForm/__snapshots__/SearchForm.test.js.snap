@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm should render component correctly in case when all props defined 1`] = `
+<div>
+  <Logo />
+  <form
+    className="wrapper"
+  >
+    <label
+      className="search-film__name-title"
+      htmlFor="search-film__name"
+    >
+      Find your movie
+    </label>
+    <input
+      className="search-film__name-input"
+      id="search-film__name"
+    />
+    <div
+      className="search-by__action-block"
+    >
+      <span
+        className="search-by"
+      >
+        <span
+          className="search-by__title"
+        >
+          Seach by
+        </span>
+        <input
+          checked={true}
+          className="search-by__input"
+          id="search-by__title"
+          name="search-by"
+          type="radio"
+          value="title"
+        />
+        <label
+          className="search-by__label"
+          htmlFor="search-by__title"
+        >
+          Title
+        </label>
+        <input
+          className="search-by__input"
+          id="search-by__gender"
+          name="search-by"
+          type="radio"
+          value="gender"
+        />
+        <label
+          className="search-by__label"
+          htmlFor="search-by__gender"
+        >
+          Gender
+        </label>
+      </span>
+      <Button
+        action={[Function]}
+        text="Search"
+      />
+    </div>
+  </form>
+</div>
+`;

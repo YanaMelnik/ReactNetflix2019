@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmPoster should render component correctly in case when all props defined 1`] = `
+<img
+  alt="name"
+  className="film__poster"
+  src="url"
+/>
+`;

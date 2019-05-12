@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmListElement should render component correctly in case when all props defined 1`] = `
+<div
+  className="film-element"
+>
+  <FilmPoster
+    filmName="testName"
+    imgUrl="testUrl"
+  />
+  <div
+    className="film-element__header"
+  >
+    <span
+      className="film-element__title"
+    >
+      testName
+    </span>
+    <span
+      className="film-element__year"
+    >
+      1997
+    </span>
+  </div>
+  <span
+    className="film-element__genre"
+  >
+    testGenre
+  </span>
+</div>
+`;
