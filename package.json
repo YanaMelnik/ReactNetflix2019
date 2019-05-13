@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",
+    "expect": "latest",
     "express": "^4.16.4",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
@@ -24,7 +25,7 @@
     "react-router": "^4.4.0",
     "react-test-renderer": "^16.8.4",
     "redux": "^4.0.1",
-    "expect": "latest"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
