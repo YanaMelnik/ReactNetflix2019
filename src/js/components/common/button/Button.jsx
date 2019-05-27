@@ -8,7 +8,7 @@ class Button extends Component {
     return (
       <button
         className='button'
-        onClick={this.props.action}>
+        onClick={this.props.action} type='button'>
         {this.props.text}
       </button>
     );

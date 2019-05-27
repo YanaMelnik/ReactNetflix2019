@@ -20,17 +20,19 @@ class FilmListMenu extends Component {
             { contentElement }
           </span>
           {this.props.filmSorting
-            ? (<span className='film-list-menu__right'>
-              <FilmListSortingOptions/>
-            </span>)
-            : null}
+            ? (
+              <span className='film-list-menu__right'>
+                <FilmListSortingOptions/>
+              </span>
+            )
+            : null
+          }
         </div>
       </div>
     );
   }
 }
 
-// TODO: how to set required for 1 of the props?  (resultLength or genreName)
 FilmListMenu.propTypes = {
   filmSorting: PropTypes.bool,
   genreName: PropTypes.string,
