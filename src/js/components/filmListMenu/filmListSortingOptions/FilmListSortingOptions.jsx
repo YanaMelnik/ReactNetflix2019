@@ -5,7 +5,6 @@ import { sortBy } from '../../../actions/actions';
 
 class FilmListSortingOptions extends Component {
   handleOptionChange(changeEvent) {
-    console.log(1);
     this.props.sortFilmCallback(changeEvent.target.value);
   }
 

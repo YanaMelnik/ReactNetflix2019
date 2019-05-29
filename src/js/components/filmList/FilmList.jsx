@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import FilmListElement from './filmListElement/FilmListElement';
-
 import './FilmList.css';
-import movieFilterStrategy from '../../utils/filtering';
 
 function filmMapCallback(elem) {
-  return <FilmListElement
-    key={elem.id}
-    filmName={elem.title}
-    yearOfIssue={elem.release_date.slice(0, 4)}
-    genre={elem.genres[0]}
-    filmPosterUrl={elem.poster_path}/>;
+  return <Link className='film-element' to={`/movie/${elem.id}`}>
+        <FilmListElement
+          key={elem.id}
+          filmName={elem.title}
+          yearOfIssue={elem.release_date.slice(0, 4)}
+          genre={elem.genres[0]}
+          filmPosterUrl={elem.poster_path}/>
+    </Link>;
 }
 
 class FilmList extends Component {
