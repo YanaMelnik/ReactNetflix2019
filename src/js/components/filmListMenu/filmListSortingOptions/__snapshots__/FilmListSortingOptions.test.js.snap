@@ -1,26 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FilmListSortingOptions should render component correctly 1`] = `
-<form>
-  <span>
-    Sort by
-  </span>
-  <span>
-    <input
-      name="sort__by"
-      type="radio"
-      value="date"
-    />
-    release date
-  </span>
-  <span>
-    <input
-      checked={true}
-      name="sort__by"
-      type="radio"
-      value="rating"
-    />
-    rating
-  </span>
-</form>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

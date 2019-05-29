@@ -4,6 +4,7 @@ exports[`Button should render component correctly in case when all props defined
 <button
   className="button"
   onClick={[Function]}
+  type="button"
 >
   test
 </button>

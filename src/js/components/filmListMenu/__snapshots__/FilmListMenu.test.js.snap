@@ -31,7 +31,7 @@ exports[`FilmListMenu should render component with sorting view and count of fil
     <span
       className="film-list-menu__right"
     >
-      <FilmListSortingOptions />
+      <Connect(FilmListSortingOptions) />
     </span>
   </div>
 </div>

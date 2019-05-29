@@ -4,6 +4,6 @@ exports[`SearchBlock should render component correctly in case when all props de
 <div
   className="search-film__block"
 >
-  <SearchForm />
+  <Connect(SearchForm) />
 </div>
 `;

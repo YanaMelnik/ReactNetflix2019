@@ -17,7 +17,7 @@ class MainPage extends Component {
 
   render() {
     return <ErrorBoundary>
-      <SearchBlock/>
+      <SearchBlock searchBy={this.props.searchBy}/>
       <FilmListMenu className='film-list-menu' resultLength={this.props.filmsList.length} filmSorting={true}/>
       <FilmList
         filmsArray={this.props.filmsList}
@@ -34,16 +34,21 @@ MainPage.propTypes = {
   filmsList: PropTypes.array.isRequired,
   sortComparator: PropTypes.func.isRequired,
   filterFunc: PropTypes.func.isRequired,
+  searchBy: PropTypes.string.isRequired,
 };
 
 const mapDispatchToProps = dispatch => ({
   requestFilmsList: () => dispatch(loadAllFilms()),
 });
 
-const mapStateToProps = state => ({
-  filmsList: state.filmsList,
-  sortComparator: movieSortStrategy(state.sortBy),
-  filterFunc: movieFilterStrategy(state.filterText, state.filterBy),
-});
+const mapStateToProps = (state, ownProps) => {
+  const query = new URLSearchParams(ownProps.location.search);
+  return ({
+    filmsList: state.filmsList,
+    sortComparator: movieSortStrategy(state.sortBy),
+    filterFunc: movieFilterStrategy(query.get('text'), query.get('searchBy')),
+    searchBy: query.get('searchBy'),
+  });
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainPage);
