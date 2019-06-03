@@ -7,7 +7,7 @@ import './FilmListElement.css';
 class FilmListElement extends Component {
   render() {
     return (
-      <div className='film-element'>
+      <div>
         <FilmPoster filmName={this.props.filmName} imgUrl={this.props.filmPosterUrl}/>
 
         <div className='film-element__header'>

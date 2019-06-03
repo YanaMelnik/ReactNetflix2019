@@ -1,6 +1,7 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
 
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
@@ -26,8 +27,17 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk)),
 );
 
+const NotFound = () => <h1>404 - not found</h1>;
+
 ReactDOM.render((
   <Provider store={store}>
-    <MoviePage/>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={MainPage} />
+        <Route path="/movie/:id" component={MoviePage} />
+        <Route path="/search" component={MainPage} />
+        <Route path="*" component={NotFound} />
+      </Switch>
+    </BrowserRouter>
   </Provider>
 ), container);
